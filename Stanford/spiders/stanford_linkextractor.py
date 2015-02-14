@@ -17,6 +17,8 @@ class StanfordLinkExtractor(LinkExtractor):
 
     def extract_links(self, response):
 
+        print "novelo"
+
         lists_page = get_project_settings().get('STANFORD_DETAILS_URL')        
 
         print response.url

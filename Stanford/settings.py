@@ -17,8 +17,8 @@ NEWSPIDER_MODULE = 'Stanford.spiders'
 USER_AGENT = 'Roberto Novelo'
 
 # Stanford settings
-STANFORD_DETAILS_URL = 'https://mailman.stanford.edu/mailman/listinfo/%s'
-STANFORD_LIST_URL = 'https://mailman.stanford.edu/mailman/listinfo/%E2%80%8Bclimbing'
+STANFORD_DETAILS_URL = 'http://mailman.stanford.edu/mailman/listinfo/%s'
+STANFORD_LIST_URL = 'http://mailman.stanford.edu/mailman/listinfo/climbing'
           
 
 CONCURRENT_ITEMS = 200
