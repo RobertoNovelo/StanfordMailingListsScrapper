@@ -14,3 +14,6 @@ pip install Scrapy
 scrapy crawl Stanford -o mails.json -t json -L INFO
 
 The mails scraped will now be at mails.json
+
+* Note: The output will be appended to whatever file you define in the scrapy command. If it does not exist, it will create a new file.
+
