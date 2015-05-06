@@ -13,4 +13,5 @@ class StanfordItem(scrapy.Item):
     # name = scrapy.Field()
 
     url  = scrapy.Field()
-    data  = scrapy.Field()
+    # data  = scrapy.Field()
+    mail  = scrapy.Field()

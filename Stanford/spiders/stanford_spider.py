@@ -37,12 +37,14 @@ class StanfordSpider(CrawlSpider):
 
         item = StanfordItem()
 
-        mail = re.search('[\w\-][\w\-\.]+@[\w\-][\w\-\.]+[a-zA-Z]{1,4}',response.body,re.DOTALL).group(0)
+        mail = re.search('[\w\-][\w\-\.]+@[\w\-][\w\-\.]+[a-zA-Z]{1,4}',response.body,re.DOTALL)
 
-        item['data'] = response.body
+        if mail is not None:
+
+            item["mail"] = mail.group(0)
+
+        # item['data'] = response.body
 
         item['url'] = response.url
-
-        print item
 
         return item
